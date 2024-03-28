@@ -1,4 +1,4 @@
-﻿using RealEstateDapper.API.Models.DTOs.ProductDto;
+﻿using RealEstateDapper.API.DTOs.ProductDtos;
 
 namespace RealEstateDapper.API.Repositories.ProductRepository
 {

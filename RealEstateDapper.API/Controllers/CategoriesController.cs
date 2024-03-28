@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using RealEstateDapper.API.Models.DTOs.CategoryDto;
+﻿using Microsoft.AspNetCore.Mvc;
+using RealEstateDapper.API.DTOs.CategoryDtos;
 using RealEstateDapper.API.Repositories.CategoryRepository;
 
 namespace RealEstateDapper.API.Controllers

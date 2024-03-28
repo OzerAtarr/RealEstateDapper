@@ -1,6 +1,6 @@
 ﻿using Dapper;
+using RealEstateDapper.API.DTOs.CategoryDtos;
 using RealEstateDapper.API.Models.DapperContext;
-using RealEstateDapper.API.Models.DTOs.CategoryDto;
 
 namespace RealEstateDapper.API.Repositories.CategoryRepository
 {
@@ -16,7 +16,7 @@ namespace RealEstateDapper.API.Repositories.CategoryRepository
         public async void CreateCategory(CreateCategoryDto categoryDto)
         {
             string query = "INSERT into Category (CategoryName,CategoryStatus) " +
-                "                   VALUES (@categoryName,@categoryStatus)";
+                "                         VALUES (@categoryName,@categoryStatus)";
             var parameters = new DynamicParameters();
             parameters.Add("@categoryName", categoryDto.CategoryName);
             parameters.Add("@categoryStatus", true);
