@@ -46,7 +46,7 @@ namespace RealEstateDapper.API.Controllers
             return Ok("Servis başarıyla güncellendi.");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteService(int id)
         {
             _serviceRepository.DeleteService(id);

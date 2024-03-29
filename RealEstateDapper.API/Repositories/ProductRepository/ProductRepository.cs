@@ -7,7 +7,6 @@ namespace RealEstateDapper.API.Repositories.ProductRepository
     public class ProductRepository : IProductRepository
     {
         private readonly Context _context;
-
         public ProductRepository(Context context)
         {
             _context = context;
