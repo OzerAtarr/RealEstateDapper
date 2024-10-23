@@ -6,8 +6,8 @@ namespace RealEstateDapper.API.Repositories.TestimonialRepository
     {
         Task<List<ResultTestimonialDto>> GetAllTestimonialAsync();
         Task<GetByIDTestimonialDto> GetTestimonial(int id);
-        void CreateTestimonial(CreateTestimonialDto createTestimonialDto);
-        void DeleteTestimonial(int id);
-        void UpdateTestimonial(UpdateTestimonialDto updateTestimonialDto);
+        Task CreateTestimonial(CreateTestimonialDto createTestimonialDto);
+        Task DeleteTestimonial(int id);
+        Task UpdateTestimonial(UpdateTestimonialDto updateTestimonialDto);
     }
 }

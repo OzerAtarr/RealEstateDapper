@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using RealEstateDapper.UI.DTOs.PopularLocationDto;
+using RealEstateDapper.UI.DTOs.PopularLocationDtos;
 
 namespace RealEstateDapper.UI.ViewComponents.HomePage
 {

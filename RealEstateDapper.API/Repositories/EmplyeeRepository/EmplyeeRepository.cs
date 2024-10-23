@@ -11,13 +11,7 @@ namespace RealEstateDapper.API.Repositories.EmplyeeRepository
         {
             _context = context;
         }
-        public string Name { get; set; }
-        public string Title { get; set; }
-        public string Mail { get; set; }
-        public string PhoneNumber { get; set; }
-        public string ImageUrl { get; set; }
-        public bool Status { get; set; }
-        public async void CreateteEmployee(CreateEmployeeDto createEmployeeDto)
+        public async Task CreateteEmployee(CreateEmployeeDto createEmployeeDto)
         {
             string query = "Insert into Employee (Name, Title, Mail, PhoneNumber, ImageUrl, Status) VALUES (@name, @title, @mail, @phoneNumber, @imageUrl, @status)";
             var parameters = new DynamicParameters();
@@ -34,7 +28,7 @@ namespace RealEstateDapper.API.Repositories.EmplyeeRepository
             }
         }
 
-        public async void DeleteteEmployee(int id)
+        public async Task DeleteteEmployee(int id)
         {
             string query = "DELETE from Employee WHERE EmployeeID=@employeeID";
             var parameters = new DynamicParameters();
@@ -69,7 +63,7 @@ namespace RealEstateDapper.API.Repositories.EmplyeeRepository
             }
         }
 
-        public async void UpdateteEmployee(UpdateEmployeeDto updateEmployeeDto)
+        public async Task UpdateteEmployee(UpdateEmployeeDto updateEmployeeDto)
         {
             string query = "UPDATE Employee " +
                 "SET Name=@name, Title=@title, Mail=@mail, PhoneNumber=@phoneNumber, ImageUrl=@imageUrl, Status=@status " +

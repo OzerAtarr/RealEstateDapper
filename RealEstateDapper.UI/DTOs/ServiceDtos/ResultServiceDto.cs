@@ -1,4 +1,5 @@
 ﻿namespace RealEstateDapper.UI.DTOs.ServiceDtos
+
 {
     public class ResultServiceDto
     {

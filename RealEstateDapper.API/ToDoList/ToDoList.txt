@@ -1,0 +1,15 @@
+1	Contact sýnýfý
+2	Async sil
+3	task çevir await ekle aseron yap
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+

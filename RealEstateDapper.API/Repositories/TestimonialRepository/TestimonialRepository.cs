@@ -12,7 +12,7 @@ namespace RealEstateDapper.API.Repositories.TestimonialRepository
             _context = context;
         }
        
-        public async void CreateTestimonial(CreateTestimonialDto createTestimonialDto)
+        public async Task CreateTestimonial(CreateTestimonialDto createTestimonialDto)
         {
             string query = "insert into Testimonial (NameSurname,Title,Comment,Status) " +
                                             "VALUES (@nameSurname,@title,@comment,@status)";
@@ -27,7 +27,7 @@ namespace RealEstateDapper.API.Repositories.TestimonialRepository
             }
         }
 
-        public async void DeleteTestimonial(int id)
+        public async Task DeleteTestimonial(int id)
         {
             string query = "DELETE FROM Testimonial " +
                 "WHERE TestimonialID=@testimonialID";
@@ -62,7 +62,7 @@ namespace RealEstateDapper.API.Repositories.TestimonialRepository
             }
         }
 
-        public async void UpdateTestimonial(UpdateTestimonialDto updateTestimonialDto)
+        public async Task UpdateTestimonial(UpdateTestimonialDto updateTestimonialDto)
         {
             string query = "UPDATE Testimonial " +
                 "SET NameSurname=@nameSurname,Title=@title,Comment=@comment,Status=@status " +

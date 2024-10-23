@@ -6,8 +6,8 @@ namespace RealEstateDapper.API.Repositories.ServiceRepository
     {
         Task<List<ResultServiceDto>> GetAllServiceAsync();
         Task<GetByIDServiceDto> GetService(int id);
-        void CreateService(CreateServiceDto createServiceDto);
-        void DeleteService(int id);
-        void UpdateService(UpdateServiceDto updateServiceDto);
+        Task CreateService(CreateServiceDto createServiceDto);
+        Task DeleteService(int id);
+        Task UpdateService(UpdateServiceDto updateServiceDto);
     }
 }

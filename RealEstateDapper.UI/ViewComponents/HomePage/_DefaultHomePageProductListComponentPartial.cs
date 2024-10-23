@@ -16,7 +16,7 @@ namespace RealEstateDapper.UI.ViewComponents.HomePage
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:44358/api/Products/ProductListWithCategory");
+            var responseMessage = await client.GetAsync("https://localhost:44358/api/Products/GetProductByDealOfThDayTrueWithCategory");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
